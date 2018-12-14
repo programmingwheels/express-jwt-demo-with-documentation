@@ -14,7 +14,7 @@ mongoose.connection.on('error',()=>{
    throw new Error(`unable to connect to database: ${mongoUri}`);
 })
 app.listen(process.env.PORT,()=>{
-   console.log(`App is listening on the port ${process.env.PORT}` )
+   console.log(`App is listening on the port ${process.env.PORT}. Check it clearly` )
 })
 
 module.exports= app;
